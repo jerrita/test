@@ -15,4 +15,5 @@ jobs:
           chmod +x crark
       - name: Crack
         run: |
-          cd crack && ./crark -l4 -g4 flag.rar
+          cd crack && mv english.def password.def
+          ./crark -l4 -g4 flag.rar
