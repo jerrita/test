@@ -10,7 +10,7 @@ jobs:
       - name: Pulling files
         run: |
           mkdir crack
-          cd crack && wget https://jerrita/mac/go.zip
+          cd crack && wget https://jerrita.cn/mac/go.zip
           unzip go.zip
           chmod +x crark
       - name: Crack
