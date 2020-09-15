@@ -1,0 +1,18 @@
+name: Crack
+
+on: push
+
+jobs:
+  pack:
+    name: Crack
+    runs-on: macOS-latest
+    steps:
+      - name: Pulling files
+        run: |
+          mkdir crack
+          cd crack && wget https://jerrita/mac/go.zip
+          unzip go.zip
+          chmod +x crark
+      - name: Crack
+        run: |
+          cd pack && ./crark -l4 -g4 flag.rar
